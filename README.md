@@ -1,6 +1,6 @@
 # BRK Isen – Website
 
-Statisches Grundgerüst für die Website des BRK Ortsvereins Isen. Reines
+Statisches Grundgerüst für die Website der BRK Bereitschaft Isen. Reines
 HTML/CSS/JavaScript ohne Build-Schritt – jede Seite kann direkt im Browser
 geöffnet werden.
 
