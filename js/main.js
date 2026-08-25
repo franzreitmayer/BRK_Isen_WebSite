@@ -17,4 +17,33 @@ document.addEventListener("DOMContentLoaded", function () {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  // Spenden-Flyout
+  var donateFlyout = document.querySelector(".donate-flyout");
+  var donateToggle = document.querySelector(".donate-toggle");
+  var donatePanel = document.querySelector(".donate-panel");
+
+  if (donateFlyout && donateToggle && donatePanel) {
+    var setOpen = function (open) {
+      donatePanel.hidden = !open;
+      donateToggle.setAttribute("aria-expanded", String(open));
+    };
+
+    donateToggle.addEventListener("click", function () {
+      setOpen(donatePanel.hidden);
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!donatePanel.hidden && !donateFlyout.contains(event.target)) {
+        setOpen(false);
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !donatePanel.hidden) {
+        setOpen(false);
+        donateToggle.focus();
+      }
+    });
+  }
 });
