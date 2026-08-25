@@ -11,7 +11,6 @@ geöffnet werden.
 ├── index.html          Startseite
 ├── ueber-uns.html       Über uns
 ├── angebote.html        Angebote/Leistungen
-├── aktuelles.html        Aktuelles/News
 ├── kontakt.html          Kontakt (Formular ohne Backend)
 ├── impressum.html        Impressum (Platzhalter, rechtlich prüfen lassen)
 ├── datenschutz.html      Datenschutzerklärung (Platzhalter, rechtlich prüfen lassen)
