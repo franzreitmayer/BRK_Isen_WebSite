@@ -1,15 +1,28 @@
-/* BRK Isen - Grundgerüst Stylesheet */
+/* BRK Isen - Grundgerüst Stylesheet
+   Farb- und Schrift-Tokens gemäß DRK-Corporate-Design, siehe
+   docs/styleguide/tokens.md für Quellen und Belege. */
 
 :root {
-  --color-red: #e2001a;
-  --color-red-dark: #ad0000;
+  /* Primärfarben (DRK-Rot, RGB 230/0/5 = #E60005, RAL 3020) */
+  --color-red: #e60005;
+  --color-red-dark: #b40004;
+  --color-red-soft: #e46450; /* "weiches Rot" für Web laut Styleguide */
+
+  /* Sekundärfarbe (DRK-Dunkelblau, RGB 0/45/85 = #002D55, RAL 5003) */
+  --color-blue-dark: #002d55;
+
+  --color-black: #000000;
   --color-dark: #1f1f1f;
   --color-gray: #555555;
   --color-light-gray: #f4f4f4;
   --color-border: #dddddd;
   --color-white: #ffffff;
   --max-width: 1100px;
-  --font-base: "Segoe UI", Arial, Helvetica, sans-serif;
+
+  /* Schrift: Merriweather (Headlines) + Helvetica/Arial (Fließtext),
+     siehe docs/styleguide/tokens.md */
+  --font-heading: "Merriweather", Georgia, serif;
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -22,10 +35,19 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-base);
+  font-family: var(--font-body);
   color: var(--color-dark);
   line-height: 1.6;
   background: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
 img {
@@ -33,8 +55,10 @@ img {
   display: block;
 }
 
+/* Fließtext-Links: DRK-Dunkelblau, fett (Neue Helvetica Bold laut Styleguide) */
 a {
-  color: var(--color-red);
+  color: var(--color-blue-dark);
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -81,14 +105,17 @@ a:hover {
   text-decoration: none;
 }
 
+/* Rotkreuz-Symbol: laut Styleguide immer rot auf weißem Grund, nie
+   umgefärbt oder invertiert. */
 .brand .logo-cross {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 2.25rem;
   height: 2.25rem;
-  background: var(--color-red);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-red);
+  border: 1px solid var(--color-border);
   font-weight: 900;
   border-radius: 4px;
 }

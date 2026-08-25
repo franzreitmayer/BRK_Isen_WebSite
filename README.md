@@ -31,6 +31,14 @@ python3 -m http.server 8000
 
 und dann `http://localhost:8000` aufrufen.
 
+## DRK-Styleguide
+
+Die Website orientiert sich am Corporate Design des DRK
+(https://styleguide.drk.de/). Status, verwendete Design-Tokens (Farben,
+Schriften) und offene Punkte dazu stehen in
+[`docs/styleguide/`](docs/styleguide/README.md) – dort auch die Anleitung,
+wie eine neue Session an dieser Anbindung weiterarbeitet.
+
 ## Offene Punkte / Platzhalter
 
 - Adresse, Telefonnummer, E-Mail und Ansprechpartner sind Platzhalter und
