@@ -27,6 +27,17 @@ oder nutzerseitig bereitgestellten Unterlagen) geklärt werden.
 - [ ] Bildsprache/„Bühnenbild“-Prinzip: konkrete Vorgaben zu Bildformaten,
       Bildunterschriften, Freistellern.
 
+## Bildmaterial
+
+- [ ] `assets/img/wappen-isen.png` (Wappen des Marktes Isen, Startseiten-Banner)
+      wurde vom Nutzer per Chat-Upload bereitgestellt. Chat-Bild-Uploads
+      werden intern rasterisiert – es liegt uns nur eine PNG-Rasterversion
+      (700×744px) vor, nicht die ursprüngliche SVG-Datei. Falls die
+      Original-SVG separat verfügbar gemacht wird (z. B. als Datei im
+      Repo), diese unter `assets/img/wappen-isen.svg` ablegen und in
+      `index.html` referenzieren – Vektorformat skaliert schärfer und ist
+      kleiner.
+
 ## Bewusste Abweichungen (Entscheidung dieser Session, zur Diskussion)
 
 - Navigations- und Footer-Links (`.main-nav a`, `.site-footer a`,
