@@ -29,14 +29,13 @@ oder nutzerseitig bereitgestellten Unterlagen) geklärt werden.
 
 ## Bildmaterial
 
-- [ ] `assets/img/wappen-isen.png` (Wappen des Marktes Isen, Startseiten-Banner)
-      wurde vom Nutzer per Chat-Upload bereitgestellt. Chat-Bild-Uploads
-      werden intern rasterisiert – es liegt uns nur eine PNG-Rasterversion
-      (700×744px) vor, nicht die ursprüngliche SVG-Datei. Falls die
-      Original-SVG separat verfügbar gemacht wird (z. B. als Datei im
-      Repo), diese unter `assets/img/wappen-isen.svg` ablegen und in
-      `index.html` referenzieren – Vektorformat skaliert schärfer und ist
-      kleiner.
+- `assets/img/hero-einsatz.webp` (Einsatzfoto, Startseiten-Banner) wurde
+  vom Nutzer per Chat-Upload bereitgestellt und kam als WebP an. Dient als
+  Hintergrundfoto im Hero-Bereich, per CSS-Verlauf (`.hero` in
+  `css/style.css`) von links (deckendes DRK-Rot, Textbereich) nach rechts
+  (Foto sichtbar) ausgeblendet.
+- Das zuvor eingebundene Wappen des Marktes Isen (`wappen-isen.png`) wurde
+  auf Nutzerwunsch wieder entfernt.
 
 ## Bewusste Abweichungen (Entscheidung dieser Session, zur Diskussion)
 
