@@ -105,19 +105,10 @@ a:hover {
   text-decoration: none;
 }
 
-/* Rotkreuz-Symbol: laut Styleguide immer rot auf weißem Grund, nie
-   umgefärbt oder invertiert. */
-.brand .logo-cross {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  background: var(--color-white);
-  color: var(--color-red);
-  border: 1px solid var(--color-border);
-  font-weight: 900;
-  border-radius: 4px;
+.brand-logo {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .main-nav ul {
